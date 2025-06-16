@@ -1,4 +1,4 @@
-# PWHT Typst Template
+# PHWT Typst Template
 
 > [!IMPORTANT]
 > In den Kapiteln treten Syntaxfehler auf, wenn der Live-View nicht aktiv ist.
