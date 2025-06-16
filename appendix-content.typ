@@ -1,3 +1,7 @@
+#import "dependencies.typ": *
+#show: codly-init.with()
+#codly(languages: codly-languages)
+
 == Zusätzliche Materialien
 
 Hier können zusätzliche Materialien wie detaillierte Daten, erweiterte Analysen, Codes, oder andere unterstützende Dokumente eingefügt werden.
