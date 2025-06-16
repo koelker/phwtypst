@@ -1,4 +1,3 @@
-// Table of Contents Section
 #import "../config/sections.typ": table_of_contents_section
 
 #let table_of_contents() = {

@@ -1,6 +1,5 @@
 #import "config/meta.typ": document_meta, colors, typography, page_margins, get_author_names
 
-// Set up page for main content
 #set page(
   paper: "a4",
   margin: page_margins,

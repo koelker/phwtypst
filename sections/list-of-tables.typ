@@ -1,4 +1,3 @@
-// List of Tables Section
 #import "../config/sections.typ": list_section
 
 #let list_of_tables() = {

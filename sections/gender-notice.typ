@@ -1,4 +1,3 @@
-// Gender Notice (Genderhinweis)
 #import "../config/sections.typ": text_section
 
 #let gender-notice() = {

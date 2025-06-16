@@ -1,4 +1,3 @@
-// Confidentiality Notice (Sperrvermerk)
 #import "../config/sections.typ": text_section
 
 #let confidentiality-notice() = {

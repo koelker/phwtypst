@@ -19,13 +19,6 @@
 #show: make-glossary
 #register-glossary(abbreviations_entries)
 
-// Style abbreviations: short form bold, long form regular
-#show figure.where(kind: "jkrb_glossarium"): it => {
-  show strong: text.with(weight: "bold")
-  show emph: text.with(style: "normal", weight: "regular")
-  it
-}
-
 #cover(
   title: document_meta.title,
   subtitle: document_meta.subtitle,
@@ -43,7 +36,7 @@
 #confidentiality-notice()
 #gender-notice()
 
-// Uncomment if needed
+// Auskommentieren, wenn kein Abstract benötigt wird
 #abstract_page(
   content: [
     #lorem(50)

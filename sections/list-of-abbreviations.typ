@@ -1,4 +1,3 @@
-// List of Abbreviations Section
 #import "../config/sections.typ": text_section
 #import "../config/abbreviations.typ": abbreviations_entries
 #import "../dependencies.typ": *

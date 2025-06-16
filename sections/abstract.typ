@@ -1,4 +1,3 @@
-// Abstract Section
 #import "../config/sections.typ": text_section
 
 #let abstract_page(content: none) = {

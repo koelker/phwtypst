@@ -1,6 +1,3 @@
-// Appendix Content
-// Add your appendix sections here
-
 == Zusätzliche Materialien
 
 Hier können zusätzliche Materialien wie detaillierte Daten, erweiterte Analysen, Codes, oder andere unterstützende Dokumente eingefügt werden.
@@ -39,7 +36,6 @@ Zusätzliche statistische Daten und Auswertungen...
 Falls Code-Beispiele relevant sind:
 
 ```javascript
-// Beispiel-JavaScript-Code
 function calculateBusinessMetrics(data) {
   return data.map(item => ({
     ...item,
@@ -49,7 +45,6 @@ function calculateBusinessMetrics(data) {
 ```
 
 ```python
-# Beispiel-Python-Code für Datenanalyse
 import pandas as pd
 import matplotlib.pyplot as plt
 
