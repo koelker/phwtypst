@@ -1,22 +1,17 @@
-#import "meta.typ": page_margins, colors, typography, get_author_names
+#import "meta.typ": colors, get_author_names, page_margins, typography
 
 #let roman_page_setup() = {
-  set page(
-    paper: "a4",
-    margin: page_margins,
-    numbering: "I",
-    footer: context {
-      set text(
-        font: typography.font_family,
-        size: typography.header_footer_size,
-        fill: colors.text,
-      )
+  set page(paper: "a4", margin: page_margins, numbering: "I", footer: context {
+    set text(
+      font: typography.font_family,
+      size: typography.header_footer_size,
+      fill: colors.text,
+    )
 
-      align(center)[
-        #counter(page).display("I")
-      ]
-    },
-  )
+    align(center)[
+      #counter(page).display("I")
+    ]
+  })
 
   set text(
     font: typography.font_family,
@@ -203,7 +198,7 @@
     fill: colors.text,
   )
 
-  set par(justify: false)
+  set par(justify: true)
 
   show heading.where(level: 1): it => {
     text(
@@ -228,15 +223,12 @@
 }
 
 #let list_section(title, outline_target) = {
-  roman_section(
-    title,
-    [
-      #outline(
-        title: none,
-        target: outline_target,
-      )
-    ],
-  )
+  roman_section(title, [
+    #outline(
+      title: none,
+      target: outline_target,
+    )
+  ])
 }
 
 #let text_section(title, content) = {
@@ -427,20 +419,18 @@
 
   counter(page).update(1)
 
-  set heading(
-    numbering: (..nums) => {
-      let level = nums.pos().len()
-      if level == 1 {
-        none
-      } else if level == 2 {
-        numbering("A", nums.pos().at(1))
-      } else if level == 3 {
-        numbering("A", nums.pos().at(1)) + "." + str(nums.pos().at(2))
-      } else if level == 4 {
-        numbering("A", nums.pos().at(1)) + "." + str(nums.pos().at(2)) + "." + str(nums.pos().at(3))
-      }
-    },
-  )
+  set heading(numbering: (..nums) => {
+    let level = nums.pos().len()
+    if level == 1 {
+      none
+    } else if level == 2 {
+      numbering("A", nums.pos().at(1))
+    } else if level == 3 {
+      numbering("A", nums.pos().at(1)) + "." + str(nums.pos().at(2))
+    } else if level == 4 {
+      numbering("A", nums.pos().at(1)) + "." + str(nums.pos().at(2)) + "." + str(nums.pos().at(3))
+    }
+  })
 
   show heading.where(level: 1): it => {
     v(1em)
@@ -565,10 +555,7 @@
       v(0.2em, weak: true)
     } else {
       v(0.3em, weak: true)
-      text(
-        size: 11pt,
-        fill: colors.text.lighten(15%),
-      )[#it]
+      text(size: 11pt, fill: colors.text.lighten(15%))[#it]
     }
   }
 
