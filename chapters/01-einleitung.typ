@@ -1,4 +1,3 @@
-#import "../config/abbreviations.typ": abbreviations_entries
 #import "../config/citations.typ": vgl
 #import "../dependencies.typ": *
 
