@@ -242,25 +242,22 @@
     paper: "a4",
     margin: page_margins,
     numbering: "1",
-    header: context {
-      let page_num = counter(page).get().first()
-      if page_num > 1 [
-        #set text(
-          font: typography.font_family,
-          size: typography.header_footer_size,
-          fill: colors.text,
-        )
+    header: context [
+      #set text(
+        font: typography.font_family,
+        size: typography.header_footer_size,
+        fill: colors.text,
+      )
 
-        #grid(
-          columns: (3fr, 1fr),
-          align: (left, right),
-          text(weight: "regular")[#effective_header], text(weight: "regular")[#get_author_names()],
-        )
+      #grid(
+        columns: (3fr, 1fr),
+        align: (left, right),
+        text(weight: "regular")[#effective_header], text(weight: "regular")[#get_author_names()],
+      )
 
-        #v(-0.5em)
-        #line(length: 100%, stroke: 0.5pt + colors.subtle)
-      ]
-    },
+      #v(-0.5em)
+      #line(length: 100%, stroke: 0.5pt + colors.subtle)
+    ],
     footer: context {
       set text(
         font: typography.font_family,

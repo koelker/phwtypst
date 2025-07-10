@@ -11,11 +11,23 @@
       fill: colors.text,
     )
 
-    #let current_heading = query(selector(heading.where(level: 1)).before(here()))
-    #let chapter_name = if current_heading.len() > 0 {
-      current_heading.last().body
-    } else {
-      document_meta.title
+    #let current_heading = query(selector(heading.where(level: 1)))
+    #let here_pos = here().position()
+    #let chapter_name = {
+      // Find the heading that is currently active at this position
+      let active_heading = none
+      for h in current_heading {
+        if h.location().position().page <= here_pos.page {
+          active_heading = h
+        } else {
+          break
+        }
+      }
+      if active_heading != none {
+        active_heading.body
+      } else {
+        document_meta.title
+      }
     }
 
     #grid(
