@@ -1,0 +1,1 @@
+Diese Beispielausarbeitung zeigt, wie Temperaturdaten aus einem Büroraum erfasst, aufbereitet und ausgewertet werden können. Es werden die Datenerhebung, grundlegende Zeitreihenanalysen, Visualisierungen sowie ein einfaches Prognosemodell skizziert. Ergebnisse deuten auf tageszeitliche Muster und Lüftungseffekte hin.
