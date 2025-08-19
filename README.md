@@ -1,7 +1,7 @@
 # PHWTypst
 
-> [!INFO] WIP
-> Repository ist noch work in progress, Ergebnisse immer überprüfen.
+> [!WARNING]  
+> Repository ist noch work in progress, Ergebnisse überprüfen.
 
 In diesem Repository findet ihr ein **inoffizielles** [Typst](https://github.com/typst/typst) Template für Ausarbeitungen an der PHWT.
 
